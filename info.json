@@ -1,0 +1,16 @@
+{
+  "name": "k2-combat-rebalance",
+  "version": "0.1.0",
+  "title": "Krastorio 2: Combat Rebalance",
+  "description": "Rebalances combat overall for a more rewarding experience in Krastorio 2. Ready for use in Space Age or Space Exploration. All settings can be toggled. Can be added to existing runs. Note: this type of mod needs people like you! You are encouraged to send feedback about this mod.",
+  "author": "xyrc",
+  "contact": "Discord: xyrc",
+  "factorio_version": "2.1",
+  "space_travel_required": false,
+  "dependencies": [
+    "base >= 2.0.72", 
+    "Krastorio2",
+    "? Krastorio2-spaced-out",
+    "? space-exploration"
+  ]
+}

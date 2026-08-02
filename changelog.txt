@@ -4,7 +4,7 @@ Date: 08-02-2026
   Features:
     - Initial release for Factorio 2.1
 ---------------------------------------------------------------------------------------------------
-Version: 0.2.20
+Version: 0.1.20
 Date: 08-01-2026
   Features:
     - Initial release for Factorio 2.0

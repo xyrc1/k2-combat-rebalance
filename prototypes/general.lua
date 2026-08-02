@@ -147,7 +147,7 @@ if settings.startup['xy-rebalance-spidertron'] then
     end
 end
 
-if settings.startup['xy-rebalance-energy-shield'] then
+if settings.startup['xy-rebalance-energy-shield'] and not mods['space-exploration'] then
     local e = data.raw['energy-shield-equipment']
     e['energy-shield-equipment'].energy_per_shield = '30kJ'
     e['energy-shield-mk2-equipment'].energy_per_shield = '36kJ'

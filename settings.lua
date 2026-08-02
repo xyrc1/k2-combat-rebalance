@@ -76,6 +76,24 @@ data:extend({
 
         order = 'rebal-bac',
     },
+    {
+        type = 'bool-setting',
+        name = 'xy-rebalance-energy-shield',
+        setting_type = 'startup',
+        default_value = true,
+
+        order = 'rebal-bad',
+
+        --localised_description = apendsa('xy-rebalance-energy-shield')
+    },
+    {
+        type = 'bool-setting',
+        name = 'xy-rebalance-exoskeleton',
+        setting_type = 'startup',
+        default_value = false,
+
+        order = 'rebal-bae',
+    },
 
     --- :(
 
@@ -111,7 +129,14 @@ data:extend({
 
         order = 'rebal-cad',
     },
-   
+    {
+        type = 'bool-setting',
+        name = 'xy-rebalance-personal-laser',
+        setting_type = 'startup',
+        default_value = true,
+
+        order = 'rebal-cae',
+    },
    
 })
 

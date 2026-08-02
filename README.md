@@ -2,7 +2,7 @@
 
 Note: This mod is in a semi-experimental state. Needs playtesting by people like you!.
 
-Note: Because this mod requires Krastorio2 as a dependency, this mod CANNOT be used with 1.6.x or before versions of Krastorio 2 Spaced Out (versions that do not require Krastorio 2 as a depdency). You MUST use a Spaced Out version that requires Krastorio 2.
+Note: Because this mod requires Krastorio2 as a dependency, this mod CANNOT be used with 1.6.x or before versions of Krastorio 2 Spaced Out (versions that do not require Krastorio 2 as a dependency). You MUST use a Spaced Out version that requires Krastorio 2.
 
 Rebalances combat overall for a more rewarding experience in Krastorio 2. Ready for use in Space Age or Space Exploration. Modular settings (recommended most on). Can be added to existing runs.
 

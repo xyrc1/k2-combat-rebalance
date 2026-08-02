@@ -146,3 +146,41 @@ if settings.startup['xy-rebalance-spidertron'] then
         end
     end
 end
+
+if settings.startup['xy-rebalance-energy-shield'] then
+    local e = data.raw['energy-shield-equipment']
+    e['energy-shield-equipment'].energy_per_shield = '30kJ'
+    e['energy-shield-mk2-equipment'].energy_per_shield = '36kJ'
+    e['kr-energy-shield-mk3-equipment'].energy_per_shield = '42kJ'
+    e['kr-energy-shield-mk3-equipment'].energy_source.buffer_capacity = '273kJ'
+    e['kr-energy-shield-mk3-equipment'].energy_source.input_flow_limit = '546kW'
+    e['kr-energy-shield-mk4-equipment'].energy_source.buffer_capacity = '400kJ'
+    e['kr-energy-shield-mk4-equipment'].energy_source.input_flow_limit = '800kW'
+    if not mods['Krastorio2-spaced-out'] then -- "earlier" into the game
+        e['kr-energy-shield-mk3-equipment'].max_shield_value = 180
+        e['kr-energy-shield-mk4-equipment'].max_shield_value = 240
+    end
+end
+
+if settings.startup['xy-rebalance-personal-laser'] then
+    local pld = {
+        'personal-laser-defense-equipment',
+        'kr-personal-laser-defense-mk2-equipment',
+        'kr-personal-laser-defense-mk3-equipment',
+        'kr-personal-laser-defense-mk4-equipment',
+    }
+    local ade = data.raw['active-defense-equipment']
+
+    for i,equipment in pairs(pld) do
+        ade[equipment].attack_parameters.cooldown = 20
+        ade[equipment].attack_parameters.range = 14 + i
+    end
+
+    ade['kr-personal-laser-defense-mk4-equipment'].attack_parameters.damage_modifier = 4
+end
+
+if settings.startup['xy-rebalance-exoskeleton'] then
+    data.raw['movement-bonus-equipment']['exoskeleton-equipment'].movement_bonus = 0.25
+    data.raw['movement-bonus-equipment']['kr-advanced-exoskeleton-equipment'].movement_bonus = 0.375
+    data.raw['movement-bonus-equipment']['kr-superior-exoskeleton-equipment'].movement_bonus = 0.5
+end

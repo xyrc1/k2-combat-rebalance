@@ -119,7 +119,8 @@ if settings.startup['xy-rebalance-poison-capsule'] then
 end
 
 if settings.startup['xy-rebalance-impulse'] then
-    util.updateDamage('kr-impulse-rifle-ammo', 'ammo', 'laser', 450)
+    --util.updateDamage('kr-impulse-rifle-ammo', 'ammo', 'laser', 450)
+    data.raw.ammo['kr-impulse-rifle-ammo'].ammo_type.action.action_delivery.target_effects.damage.amount = 450
 end
 
 --[[if settings.startup['xy-rebalance-shotgun'] then

@@ -13,12 +13,11 @@ if settings.startup['xy-rebalance-rifle'] then
     data.raw['ammo']['kr-uranium-rifle-magazine'].magazine_size = 20
     data.raw['ammo']['kr-imersite-rifle-magazine'].magazine_size = 20
 
-    util.updateDamage('kr-uranium-rifle-magazine-projectile', 'projectile', 'kr-radioactive', 8)
-    util.updateDamage('kr-imersite-rifle-magazine-projectile', 'projectile', 'laser', 8)
-
-    util.addDamage('kr-imersite-rifle-magazine-projectile', 'projectile', 'kr-radioactive', 8)
-
+    util.updateDamage('kr-uranium-rifle-magazine-projectile', 'projectile', 'kr-radioactive', 9)
     util.replaceIngredient('kr-uranium-rifle-magazine', 'uranium-238', 1)
+    
+    util.updateDamage('kr-imersite-rifle-magazine-projectile', 'projectile', 'laser', 9)
+    util.addDamage('kr-imersite-rifle-magazine-projectile', 'projectile', 'kr-radioactive', 9)
     util.replaceIngredient('kr-imersite-rifle-magazine', 'kr-imersite-crystal', 1)
 
     data.raw.gun['vehicle-machine-gun'].attack_parameters.cooldown = 6

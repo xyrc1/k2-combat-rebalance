@@ -66,7 +66,7 @@ if settings.startup['xy-rebalance-antimat'] then
         },
     }
 
-    local dmg2 = 140
+    local dmg2 = 160
     data.raw.projectile['kr-armor-piercing-anti-materiel-rifle-magazine-projectile'].piercing_damage = 1250
     data.raw.projectile['kr-armor-piercing-anti-materiel-rifle-magazine-projectile'].action = {
         type = 'direct',
@@ -87,7 +87,7 @@ if settings.startup['xy-rebalance-antimat'] then
             target_effects = {
                 { type = 'create-entity', entity_name = 'explosion-hit' },
                 { type = 'damage', damage = { amount = dmg2, type = 'physical'}},
-                 { type = 'damage', damage = { amount = 80, type = 'kr-radioactive'}}
+                 { type = 'damage', damage = { amount = 90, type = 'kr-radioactive'}}
             }
         },
     }
@@ -100,8 +100,8 @@ if settings.startup['xy-rebalance-antimat'] then
             target_effects = {
                 { type = 'create-entity', entity_name = 'explosion-hit' },
                 { type = 'damage', damage = { amount = dmg2, type = 'physical'}},
-                { type = 'damage', damage = { amount = 80, type = 'kr-radioactive'}},
-                { type = 'damage', damage = { amount = 80, type = 'laser'}}
+                { type = 'damage', damage = { amount = 90, type = 'kr-radioactive'}},
+                { type = 'damage', damage = { amount = 90, type = 'laser'}}
             }
         },
     }
